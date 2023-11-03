@@ -8,6 +8,9 @@ public class TransaccionDTO {
     private double precioPorGalon;
     private int idEmpleado;
     private int idCliente;
+    private boolean pagarConPuntos;
+
+    private double totalPagar;
 
     public int getIdTanque() {
         return idTanque;
@@ -63,5 +66,21 @@ public class TransaccionDTO {
 
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
+    }
+
+    public boolean isPagarConPuntos() {
+        return pagarConPuntos;
+    }
+
+    public void setPagarConPuntos(boolean pagarConPuntos) {
+        this.pagarConPuntos = pagarConPuntos;
+    }
+
+    public double getTotalPagar() {
+        return totalPagar;
+    }
+
+    public void setTotalPagar(double totalPagar) {
+        this.totalPagar = totalPagar;
     }
 }

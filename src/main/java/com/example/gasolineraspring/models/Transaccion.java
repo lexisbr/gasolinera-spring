@@ -37,6 +37,9 @@ public class Transaccion {
     @Column(name = "id_empleado")
     private int idEmpleado;
 
+    @Column(name = "total_pagar")
+    private double totalPagar;
+
     public Transaccion(TransaccionDTO transaccionDTO) {
         this.idTanque = transaccionDTO.getIdTanque();
         this.idCliente = transaccionDTO.getIdCliente();
@@ -45,6 +48,7 @@ public class Transaccion {
         this.precioPorGalon = transaccionDTO.getPrecioPorGalon();
         this.fechaTransaccion = new Date();
         this.idEmpleado = transaccionDTO.getIdEmpleado();
+        this.totalPagar = transaccionDTO.getTotalPagar();
     }
 
     public int getIdTransaccion() {
